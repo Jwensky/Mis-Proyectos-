@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarea</title>
+</head>
+<body>
+  <div class="contenedor-principal">
+    <h1>Lista de Tareas</h1>
+
+    <div class="contenedor">
+      <input type="text"  placeholder="Escriba la tarea" id="inputTarea" autofocus>
+      <button id="botonAdd" class="botonagregar">Agregar</button>
+
+    </div>
+    <ul class="listas-de-tareas">
+    </ul>
+  </div>
+  <script src="Lista.js"></script>
+</body>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+
+    margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #504f2c, #b4c4ce);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #f5f5f5;
+  }
+
+    .contenedor-principal {
+      background-color: rgb(36, 33, 33);
+      margin: 200px auto;
+      width: 500px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      text-transform: capitalize;
+      color: white;
+    }
+    .contenedor {
+      width: 450px;
+      display: 20px;
+      padding: 20px;
+      margin: auto;
+
+      justify-content: space-between;
+    }
+    .contenedor input[type="text"]{
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 10px;
+      width: 280px;
+    }
+
+    .contenedor .botonagregar {
+      padding: 10px 15px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .contenedor .botonagregar:hover{
+      background-color: rgb(36, 33, 33);
+      border: 1px solid white;
+      color: white;
+    }
+    .listas-de-tareas{
+      list-style: none;
+      padding: 20px;
+    }
+    .listas-de-tareas li{
+      display: flex;
+      text-transform: capitalize;
+      border-radius: 10px;
+      background-color: rgb(164, 160, 167);
+      padding: 20px;
+      justify-content: space-between;
+    }
+
+  .listas-de-tareas li input[type="checkbox"]{
+    width: 180px;
+    height: 18px;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  .listas-de-tareas li {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .listas-de-tareas li .delete{
+    cursor: pointer;
+  }
+  .listas-de-tareas li .delete:hover{
+    color: black;
+  }
+
+</style>
+</html>
+

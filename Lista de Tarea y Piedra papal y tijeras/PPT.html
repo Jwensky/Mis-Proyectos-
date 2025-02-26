@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel o Tijeras</title>
+  <body>
+    <h1>Piedra, Papel o Tijeras</h1>
+    <div class="choices">
+      <button onclick="playGame('Piedra')">Piedra</button>
+      <button onclick="playGame('Papel')">Papel</button>
+      <button onclick="playGame('Tijeras')">Tijeras</button>
+    </div>
+    <div class="result" id="result"></div>
+    <div class="winner" id="winner"></div>
+    <button class="reset" onclick="resetGame()" style="display: none;" id="resetButton">Reiniciar</button>
+    <script src="PPT.js"></script>
+  </body>
+  <style>
+    body {
+    
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      background:url(IMG2.png.jpg);
+    }
+  
+    h1 {
+      color: #333;
+    }
+    .choices {
+      margin: 20px;
+    }
+    .choices button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #6200ea;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    .choices button:hover {
+      
+      background-color: #3700b3;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .winner {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .reset {
+      
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #03dac6;
+      color: #000;
+      transition: background-color 0.3s;
+    }
+    .reset:hover {
+      
+      background-color: #018786;
+    }
+  </style>
+</head>
+</html>
